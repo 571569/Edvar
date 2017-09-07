@@ -2,6 +2,7 @@ package no.hvl.dat100;
 
 import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
+import static javax.swing.JOptionPane.showMessageDialog;
 
 public class Test {
 
@@ -18,6 +19,8 @@ public class Test {
 					Sum = Sum * i;
 				}
 				gyldig = true;
+				String sum = "Summen av " + n + "! er: " + Sum;
+				showMessageDialog(null, sum);
 				System.out.println(Sum);
 			}
 		}

@@ -12,6 +12,7 @@ public class Oppgave3 {
 		int n = 0;
 		int Sum = 1;
 		int sum = 1;
+		int i = 1;
 
 		do {
 			String Heltall = showInputDialog("Skriv inn et heltall større enn 0: ");
@@ -22,17 +23,15 @@ public class Oppgave3 {
 			}
 		} while (!gyldigTall);
 
-		for (int i = 1; i <= n; i++) {
+		for (i = 1; i < n; i++) {
 			Sum = Sum * i;
+			System.out.print(i + " * ");
 		}
-		System.out.println(Sum);
+		
+		
+		Sum=Sum*i;
+		
+		System.out.println(i +" = " + Sum);
 
-		int teller = 1;
-		while (teller <= n) {
-			sum = sum * teller;
-			System.out.print(teller + " * ");
-			teller = teller + 1; 
-		}
-		System.out.println(" = " + sum);
 	}
 }
